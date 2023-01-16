@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body, html {
+    background-image:  url("./assets/fr5.png");
+    background-attachment: fixed;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.linear-bg{
+    background: linear-gradient(270deg, #11111e00 0.17%, #111111d6 99.5%);
+}
+
+.hoveres{
+    @apply hidden
+}
+.hovered:hover .hoveres{
+    @apply flex-colo
+}
+
+.flex-colo {
+    @apply flex flex-col justify-center items-center;
+
+}
+
+/* .flex-row {
+    @apply flex flex-row justify-center items-center;
+} */
+
+.flex-btn {
+    @apply flex justify-between items-center;
+    
+}
+/* .transition {
+    @apply transition duration-300 ease-in-out;
+} */
+.zIndex {
+    z-index: 1000;
+}
+
